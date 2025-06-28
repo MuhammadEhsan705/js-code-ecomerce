@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="app.js" defer ></script>
+    <link rel="stylesheet" href="./output.css">
+    <style>
+        @media (min-width: 775px) and (max-width: 1181px) {
+    .li-hidden-between {
+      display: none;
+    }
+  } 
+   @media(min-width: 806px) and (max-width:1181px){
+    .iconshow{
+        display: inline-block;
+    }
+   }
+   @media(min-width: 806px) and (max-width:1181px){
+    .lihidden{
+        display:none;
+    }
+   } 
+   
+
+  
+    </style>
+</head>
+<body class="bg-[#f4f4f4] ">
+    <header class="">
+        <ul class="md:flex lihidden justify-end gap-3 pr-2 pt-3 hidden">
+            <li><a  class="hover:text-red-600" href="">Product Engraving</a></li>
+            <li><a  class="hover:text-red-600" href=""> Gift Store</a></li>
+            <li><a  class="hover:text-red-600" href=""> Express Delivery</a></li>
+            <li><a  class="hover:text-red-600" href=""> Corporate Orders</a></li>
+            <li><a  class="hover:text-red-600" href="">  Contact Us</a></li>
+        </ul>
+        <nav class=" flex justify-between bg-[#484241] p-3 mt-6   ">
+    
+    
+                <a class="md:hidden iconshow" href=""><i class="fa-solid fa-bars"></i></a>
+                <a href="index.html"><img  class=" pl-6 "   src="logo.webp"></a>
+                <ul class="md:flex li-hidden-between justify-between pl-24 text-white font-bold gap-7  hidden">
+                    <li>
+                       <button class="btn"><a href="">Audio & Buds</a></button> 
+                        
+                    </li>
+                    <li>
+                       <button class="btn"><a href="">Smart Watches</a></button> 
+                        
+                    </li>
+                    <li>
+                       <button class="btn"><a href="">Charging Devices</a></button> 
+                        
+                    </li>
+                    <li>
+                        <button class="btn"><a href="">Accessories</a></button>  
+                        
+                    </li>
+                </ul>
+                <div class="flex gap-12 ">
+                    <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                    <a href=""><i class="fa-solid fa-user"></i></a>
+                    <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>
+    
+                
+                
+           
+        </nav>
+        <!-- -------------------menue section--------------------- -->
+        
+        
+       </header>
+    
+
+       <section class="Buy Now bg-white">
+         <div class=" bg-[#fff8f1] p-32  rounded-3xl  grid grid-cols-2">
+            <div class="text space-y-8 ">
+                <div class="links flex pl-3 pt-2  ">
+                    <a class="hover:text-red-600" href="">Home<span>></span></a> 
+                    <a class="hover:text-red-600"  href="">Smart Watch<span>></span></a>
+                    <p>R-013 LUXE Smart Watch</p>
+                     </div>
+                     <div>
+                        <h1 class="font-bold text-3xl">R-013 LUXE Smart Watch</h1>
+                        <p>Amoled + AOD display | HD resolution | Luxury stainless steel built</p>
+                        <div id="customer" class=" staricon  mt-2">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                           </div>
+                           <p>10,995 PKR</p>
+                           <div>
+                            <p id="colorname" >Color:</p>
+
+                            
+                           </div>
+                          <div class="img-btn flex ">
+                            <img onclick="buycolor('Black')"  class=" h-10 w-10 " src="./buy color select/black.avif">
+                            <img onclick="buycolor('Gold')" class=" h-10 w-10 "  src="./buy color select/gold.avif">
+                            <img onclick="buycolor('Selver')" class=" h-10 w-10 " src="./buy color select/silver.avif"></div> 
+                            <div class="btn mt-9">
+                            <button id="open-cart"  class=" cursor-pointer border-2 pl-4 pr-4 bg-white  font-bold rounded-3xl">ADD TO Cart</button>
+                            <button class=" border-2 pl-4 pr-4 pt-1 pb-1 font-bold bg-black text-white rounded-3xl">Buy it now</button></div>
+
+                           
+                    </div>
+            </div>
+            <div class="image  rounded-4xl bg-[url('./bg.webp')] grid grid-cols-2  ">
+                <img id="buy" class="" src="R-014-black.webp">
+                    <div class=" gap-72   parts">
+                    <img class="slide active " src="./R-013 luxe buy product image/1.webp">
+                    <img class="slide " src="./R-013 luxe buy product image/2.webp">
+                    <img class="slide " src="./R-013 luxe buy product image/3.webp">
+                    <img class="slide " src="./R-013 luxe buy product image/4.webp">
+                </div>
+                
+                
+            </div>
+         </div>
+         
+       </section>
+
+
+
+
+
+
+
+
+       <!-- ---------------------------Add to cart=-------------------------------- -->
+        <section class="">
+            <div class="cart fixed top-0 right-0 w-96 bg-white rounded-3xl pt-4 pb-[40px] pr-[20px] h-auto z-[100] transform translate-x-full transition-transform duration-300 ">
+                <div class="cart-content">
+                    <div class="cart-heading flex justify-between">
+                        <h1 class="font-bold">Your Cart</h1>
+                        <i  class="fa-solid fa-xmark" id="cart-close"></i>
+        
+                    </div>
+                    <div class="cart-heading flex justify-between">
+                        <h1>Product</h1>
+                        <h1>Total</h1>
+                        
+        
+                    </div>
+                    <div class="cart-box flex  mt-5">
+                        <img class=" w-44 h-44 " src="R-014-black.webp">
+                        
+                        <div class="cart-detail grid gap-2 mr-auto">
+                            <h2 class="cart-product-title  font-size">R-013 Smart Watch</h2>
+                            <span class="cart-price flex justify-between  font-bold">RS:3856 <i class="fa-solid fa-trash   cart-remove gap-64"></i></span>
+                            <span>Color: Silver (Grey)</span>
+                            
+                            <div class="cart-quantity flex w-[100px] justify-center items-center ">
+                                <button class="  less cursor-pointer" id="">-</button>
+                                <span id="" class="  quantity  number w-10 flex justify-center items-center cursor-default">1</span>
+                                <button class=" add cursor-pointer" id="">+</button>
+                            </div>
+        
+                        </div>
+                        <h1 class=" product-total  change-price" id="">RS:total</h1>
+                        
+                    </div>
+        
+                </div>
+                <div class="checkout ">
+                    <hr  class="border-gray-500 w-full mt-14 " >
+                    <div class=" flex justify-between p-2">
+                        <h1 class="font-bold">Estimated total</h1>
+                        <h1 class="estimated-total change-price" id="">RS:total</h1>
+        
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <button class="  pl-7 pr-7 pt-2 pb-2 bg-black text-white">Check Out</button>
+                    </div>
+                    
+        
+                </div>
+                
+                
+        
+            </div>
+
+        </section>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="app.js" defer ></script>
+    <link rel="stylesheet" href="./output.css">
+    <style>
+        @media (min-width: 775px) and (max-width: 1181px) {
+    .li-hidden-between {
+      display: none;
+    }
+  } 
+   @media(min-width: 806px) and (max-width:1181px){
+    .iconshow{
+        display: inline-block;
+    }
+   }
+   @media(min-width: 806px) and (max-width:1181px){
+    .lihidden{
+        display:none;
+    }
+   } 
+   .main{
+
+     width:auto;
+     height: 500px;
+     position: relative;
+     margin: auto;
+     display: flex;
+     align-items: center;
+     overflow: hidden;
+
+   }
+    .slide{
+        /* border-radius: 2%; */
+        margin-top: 50px;
+        width: 100%;
+        height: 100%;
+       position: absolute;
+       opacity: 0;
+       /* transition: transform 0.5s ease-in-out; */
+    }
+    .slide.active {
+      opacity: 1;
+      z-index: 1;
+    }
+        
+            
+        .btn {
+      padding: 7px  12px;
+      font-size: 16px;
+      color: white;
+      
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #e9e3e2 ;
+      color: black;
+      transform: scale(1.0);
+      
+    }
+    
+   
+     
+
+    
+    </style>
+</head>
+
+<body class="   ">
+   
+    <ul class="md:flex lihidden justify-end gap-3 pr-2 pt-3 hidden">
+        <li><a  class="hover:text-red-600" href="">Product Engraving</a></li>
+        <li><a  class="hover:text-red-600" href=""> Gift Store</a></li>
+        <li><a  class="hover:text-red-600" href=""> Express Delivery</a></li>
+        <li><a  class="hover:text-red-600" href=""> Corporate Orders</a></li>
+        <li><a  class="hover:text-red-600" href="">  Contact Us</a></li>
+    </ul>
+    <nav class="  ">
+
+              <div class="flex justify-between bg-[#484241] p-3 mt-6  ">
+           <button class=" burger md:hidden iconshow"><i class="fa-solid fa-bars "></i></button>
+             <a href="index.html"><img  class=" pl-6 "   src="logo.webp"></a>
+            <ul class="md:flex li-hidden-between justify-between pl-24 text-white font-bold gap-7  hidden">
+                <li>
+                   <button class="btn"><a href="">Audio & Buds</a></button> 
+                    
+                </li>
+                <li>
+                   <button class="btn"><a href="">Smart Watches</a></button> 
+                    
+                </li>
+                <li>
+                   <button class="btn"><a href="">Charging Devices</a></button> 
+                    
+                </li>
+                <li>
+                    <button class="btn"><a href="">Accessories</a></button>  
+                    
+                </li>
+            </ul>
+            <div class="flex gap-12 ">
+                <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-solid fa-user"></i></a>
+                <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+            </div>
+          </div>
+
+        
+    
+            
+       
+    </nav>
+    
+    
+    
+  
+   <!-- --------------------mobile menue--------------- -->
+   
+   <!-- Mobile Menu -->
+<div id="menu" class="   fixed top-20 left-0 z-10 grid grid-cols-1 gap-7 w-64  bg-white text-black p-4 transform -translate-x-full transition-transform duration-300 ">
+  <a href="#" class="block hover:text-red-400">Audio & Buds</a>
+  <a href="#" class="block hover:text-red-400">Smart Watches</a>
+  <a href="#" class="block hover:text-red-400">Charging Devices</a>
+  <a href="#" class="block hover:text-red-400">Accessories</a>
+  <hr class="bg-gray-800 border-2 w-full">
+  <ul class="grid grid-cols-1 gap-7  pr-2 pt-3 ">
+    <li><a  class="hover:text-red-600" href="">Product Engraving</a></li>
+    <li><a  class="hover:text-red-600" href=""> Gift Store</a></li>
+    <li><a  class="hover:text-red-600" href=""> Express Delivery</a></li>
+    <li><a  class="hover:text-red-600" href=""> Corporate Orders</a></li>
+    <li><a  class="hover:text-red-600" href="">  Contact Us</a></li>
+</ul>
+  
+</div>
+
+   
+   <!-- --------------------------Section main--------------------------- -->
+   <section class="  ">
+             
+      <div class="main ">
+        <img src="main.webp" class=" slide active ">
+        <img src="main1.webp" class=" slide">
+        <img src="main2.webp" class="slide ">
+        <img src="main3.webp" class="slide ">
+        
+
+      </div>
+      
+      
+         </section>
+    <section class="  new arrival  bg-white   ">
+      <h1 class="  mt-12 ml-4 text-4xl font-bold"> NEW <span class="text-blue-800">Arrivals</span></h1>
+       
+    
+    <div class=" card  flex justify-between">
+      <div class="cart bg-amber-100 w-64 rounded-2xl flex-shrink-0 transition-transform duration-300 hover:scale-105 ">
+        <img id="R-014-img" class="h-56 w-56 transition-transform duration-300 ease-in-out hover:scale-105 " src="R-014.webp">
+        <h1 class=" font-bold pl-3 text-wrap  text-lg">R-014 LUXE Smart Watch</h1>
+        <p class="text-sm">Amoled+AOD Display|550 Nits Brightness</p>
+        <hr class=" size-0.5 w-full bg-black">
+        <div class="rating  flex justify-between ">
+          <div id="R014" class=" staricon  mt-2">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+           </div>
+          <div class="button mt-2">
+            <input  onclick="changeImage('black')"   type="radio" name="color" value="black">
+            <input onclick="changeImage('gold')"  type="radio" name="color" value="gold"> 
+            <input onclick="changeImage('selver')"  type="radio" name="color" value="selver"> 
+          </div>
+          
+          
+        </div>
+        <div class="purchase flex justify-between">
+          <p class="p-2 font-bold">10,995</p>
+          <a  href="r-013-buy.html"><button   class="p-2  bg-blue-800 rounded-2xl text-white cursor-pointer">BUYNOW</button></a>
+
+        </div>
+        
+      </div>
+               <!-- -----------------------hhhhhhhhhhh------------ -->
+               <div class="cart bg-amber-100 w-64 rounded-2xl flex-shrink-0 transition-transform duration-300 hover:scale-105 ">
+                <img id="R-014-img" class="h-56 w-56 transition-transform duration-300 ease-in-out hover:scale-105 " src="R-013  luxe wactc.webp">
+                <h1 class=" font-bold pl-3 text-wrap  text-lg">R-014 LUXE Smart Watch</h1>
+                <p class="text-sm">Amoled+AOD Display|550 Nits Brightness</p>
+                <hr class=" size-0.5 w-full bg-black">
+                <div class="rating  flex justify-between ">
+                  <div id="R013" class=" staricon  mt-2">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                   </div>
+                  <div class="button mt-2">
+                    <input  onclick="changeImage('black')"   type="radio" name="color" value="black">
+                    <input onclick="changeImage('gold')"  type="radio" name="color" value="gold"> 
+                    <input onclick="changeImage('selver')"  type="radio" name="color" value="selver"> 
+                  </div>
+                  
+                  
+                </div>
+                <div class="purchase flex justify-between">
+                  <p class="p-2 font-bold">10,995</p>
+                  <a  href="r-013-buy.html"><button   class="p-2  bg-blue-800 rounded-2xl text-white cursor-pointer">BUYNOW</button></a>
+        
+                </div>
+                
+              </div>
+               <!-- -----------------------hhhhhhhhhhh------------ -->
+               <div class="cart bg-amber-100 w-64 rounded-2xl flex-shrink-0 transition-transform duration-300 hover:scale-105 ">
+                <img id="R-014-img" class="h-56 w-56 transition-transform duration-300 ease-in-out hover:scale-105 " src="R-013.webp">
+                <h1 class=" font-bold pl-3 text-wrap  text-lg">R-014 LUXE Smart Watch</h1>
+                <p class="text-sm">Amoled+AOD Display|550 Nits Brightness</p>
+                <hr class=" size-0.5 w-full bg-black">
+                <div class="rating  flex justify-between ">
+                  <div id="R-7015" class=" staricon  mt-2">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                   </div>
+                  <div class="button mt-2">
+                    <input  onclick="changeImage('black')"   type="radio" name="color" value="black">
+                    <input onclick="changeImage('gold')"  type="radio" name="color" value="gold"> 
+                    <input onclick="changeImage('selver')"  type="radio" name="color" value="selver"> 
+                  </div>
+                  
+                  
+                </div>
+                <div class="purchase flex justify-between">
+                  <p class="p-2 font-bold">10,995</p>
+                  <a  href="r-013-buy.html"><button   class="p-2  bg-blue-800 rounded-2xl text-white cursor-pointer">BUYNOW</button></a>
+        
+                </div>
+                
+              </div>
+               <!-- -----------------------hhhhhhhhhhh------------ -->
+               <div class="cart bg-amber-100 w-64 rounded-2xl flex-shrink-0 transition-transform duration-300 hover:scale-105 ">
+                <img id="R-014-img" class="h-56 w-56 transition-transform duration-300 ease-in-out hover:scale-105 " src="R-520 Earbuds.webp">
+                <h1 class=" font-bold pl-3 text-wrap  text-lg">R-014 LUXE Smart Watch</h1>
+                <p class="text-sm">Amoled+AOD Display|550 Nits Brightness</p>
+                <hr class=" size-0.5 w-full bg-black">
+                <div class="rating  flex justify-between ">
+                  <div id="R014" class=" staricon  mt-2">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                   </div>
+                  <div class="button mt-2">
+                    <input  onclick="changeImage('black')"   type="radio" name="color" value="black">
+                    <input onclick="changeImage('gold')"  type="radio" name="color" value="gold"> 
+                    <input onclick="changeImage('selver')"  type="radio" name="color" value="selver"> 
+                  </div>
+                  
+                  
+                </div>
+                <div class="purchase flex justify-between">
+                  <p class="p-2 font-bold">10,995</p>
+                  <a  href="r-013-buy.html"><button   class="p-2  bg-blue-800 rounded-2xl text-white cursor-pointer">BUYNOW</button></a>
+        
+                </div>
+                
+              </div>
+               <!-- -----------------------hhhhhhhhhhh------------ -->
+               <div class="cart bg-amber-100 w-64 rounded-2xl flex-shrink-0 transition-transform duration-300 hover:scale-105 ">
+                <img id="R-014-img" class="h-56 w-56 transition-transform duration-300 ease-in-out hover:scale-105 " src="R-520 Earbuds.webp">
+                <h1 class=" font-bold pl-3 text-wrap  text-lg">R-014 LUXE Smart Watch</h1>
+                <p class="text-sm">Amoled+AOD Display|550 Nits Brightness</p>
+                <hr class=" size-0.5 w-full bg-black">
+                <div class="rating  flex justify-between ">
+                  <div id="R014" class=" staricon  mt-2">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                   </div>
+                  
+                  
+                  
+                </div>
+                <div class="purchase flex justify-between">
+                  <p class="p-2 font-bold">10,995</p>
+                  <a  href="r-013-buy.html"><button   class="p-2  bg-blue-800 rounded-2xl text-white cursor-pointer">BUYNOW</button></a>
+               
+               <!-- -----------------------hhhhhhhhhhh------------ -->
+    </div>
+         
+    
+
+         
+  </section>
+
+
+
+  
+  
+</body>
+</html>

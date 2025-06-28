@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <title>Responsive Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="app.js" defer ></script>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body class="bg-gray-100">
+
+  <!-- Container for all carts -->
+<div class="card flex flex-col gap-4 md:flex-row md:overflow-x-auto md:whitespace-nowrap p-4">
+  
+  <!-- Individual Cart -->
+  <div class="cart bg-amber-100 w-full md:w-64 flex-shrink-0 rounded-2xl transition-transform duration-300 hover:scale-105 p-4">
+    <img class="h-56 w-full object-contain transition-transform duration-300 ease-in-out hover:scale-105" src="R-014.webp">
+    <h1 class="font-bold text-lg mt-2">R-014 LUXE Smart Watch</h1>
+    <p class="text-sm">Amoled+AOD Display | 550 Nits Brightness</p>
+    <hr class="size-0.5 w-full bg-black my-2">
+    <div class="rating flex justify-between">
+      <div class="staricon mt-2">
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+      </div>
+      <div class="button mt-2">
+        <input onclick="changeImage('black')" type="radio" name="color1" value="black">
+        <input onclick="changeImage('gold')" type="radio" name="color1" value="gold">
+        <input onclick="changeImage('silver')" type="radio" name="color1" value="silver">
+      </div>
+    </div>
+    <div class="purchase flex justify-between mt-2">
+      <p class="p-2 font-bold">10,995</p>
+      <a href="r-013-buy.html">
+        <button class="p-2 bg-blue-800 rounded-2xl text-white cursor-pointer">BUY NOW</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- 🟩 Copy & paste same block for other products (just change image/text as needed) -->
+  <div class="cart bg-amber-100 w-full md:w-64 flex-shrink-0 rounded-2xl transition-transform duration-300 hover:scale-105 p-4">
+    <img class="h-56 w-full object-contain transition-transform duration-300 ease-in-out hover:scale-105" src="R-014.webp">
+    <h1 class="font-bold text-lg mt-2">R-014 LUXE Smart Watch</h1>
+    <p class="text-sm">Amoled+AOD Display | 550 Nits Brightness</p>
+    <hr class="size-0.5 w-full bg-black my-2">
+    <div class="rating flex justify-between">
+      <div class="staricon mt-2">
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+      </div>
+      <div class="button mt-2">
+        <input onclick="changeImage('black')" type="radio" name="color1" value="black">
+        <input onclick="changeImage('gold')" type="radio" name="color1" value="gold">
+        <input onclick="changeImage('silver')" type="radio" name="color1" value="silver">
+      </div>
+    </div>
+    <div class="purchase flex justify-between mt-2">
+      <p class="p-2 font-bold">10,995</p>
+      <a href="r-013-buy.html">
+        <button class="p-2 bg-blue-800 rounded-2xl text-white cursor-pointer">BUY NOW</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- 🟩 Copy & paste same block for other products (just change image/text as needed) -->
+  <div class="cart bg-amber-100 w-full md:w-64 flex-shrink-0 rounded-2xl transition-transform duration-300 hover:scale-105 p-4">
+    <img class="h-56 w-full object-contain transition-transform duration-300 ease-in-out hover:scale-105" src="R-014.webp">
+    <h1 class="font-bold text-lg mt-2">R-014 LUXE Smart Watch</h1>
+    <p class="text-sm">Amoled+AOD Display | 550 Nits Brightness</p>
+    <hr class="size-0.5 w-full bg-black my-2">
+    <div class="rating flex justify-between">
+      <div class="staricon mt-2">
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+      </div>
+      <div class="button mt-2">
+        <input onclick="changeImage('black')" type="radio" name="color1" value="black">
+        <input onclick="changeImage('gold')" type="radio" name="color1" value="gold">
+        <input onclick="changeImage('silver')" type="radio" name="color1" value="silver">
+      </div>
+    </div>
+    <div class="purchase flex justify-between mt-2">
+      <p class="p-2 font-bold">10,995</p>
+      <a href="r-013-buy.html">
+        <button class="p-2 bg-blue-800 rounded-2xl text-white cursor-pointer">BUY NOW</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- 🟩 Copy & paste same block for other products (just change image/text as needed) -->
+  <div class="cart bg-amber-100 w-full md:w-64 flex-shrink-0 rounded-2xl transition-transform duration-300 hover:scale-105 p-4">
+    <img class="h-56 w-full object-contain transition-transform duration-300 ease-in-out hover:scale-105" src="R-014.webp">
+    <h1 class="font-bold text-lg mt-2">R-014 LUXE Smart Watch</h1>
+    <p class="text-sm">Amoled+AOD Display | 550 Nits Brightness</p>
+    <hr class="size-0.5 w-full bg-black my-2">
+    <div class="rating flex justify-between">
+      <div class="staricon mt-2">
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+      </div>
+      <div class="button mt-2">
+        <input onclick="changeImage('black')" type="radio" name="color1" value="black">
+        <input onclick="changeImage('gold')" type="radio" name="color1" value="gold">
+        <input onclick="changeImage('silver')" type="radio" name="color1" value="silver">
+      </div>
+    </div>
+    <div class="purchase flex justify-between mt-2">
+      <p class="p-2 font-bold">10,995</p>
+      <a href="r-013-buy.html">
+        <button class="p-2 bg-blue-800 rounded-2xl text-white cursor-pointer">BUY NOW</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- 🟩 Copy & paste same block for other products (just change image/text as needed) -->
+  <div class="cart bg-amber-100 w-full md:w-64 flex-shrink-0 rounded-2xl transition-transform duration-300 hover:scale-105 p-4">
+    <img class="h-56 w-full object-contain transition-transform duration-300 ease-in-out hover:scale-105" src="R-014.webp">
+    <h1 class="font-bold text-lg mt-2">R-014 LUXE Smart Watch</h1>
+    <p class="text-sm">Amoled+AOD Display | 550 Nits Brightness</p>
+    <hr class="size-0.5 w-full bg-black my-2">
+    <div class="rating flex justify-between">
+      <div class="staricon mt-2">
+        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+      </div>
+      <div class="button mt-2">
+        <input onclick="changeImage('black')" type="radio" name="color1" value="black">
+        <input onclick="changeImage('gold')" type="radio" name="color1" value="gold">
+        <input onclick="changeImage('silver')" type="radio" name="color1" value="silver">
+      </div>
+    </div>
+    <div class="purchase flex justify-between mt-2">
+      <p class="p-2 font-bold">10,995</p>
+      <a href="r-013-buy.html">
+        <button class="p-2 bg-blue-800 rounded-2xl text-white cursor-pointer">BUY NOW</button>
+      </a>
+    </div>
+  </div>
+
+  <!-- 🟩 Copy & paste same block for other products (just change image/text as needed) -->
+
+</div>
+
+</body>
+</html>
